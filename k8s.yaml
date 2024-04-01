@@ -6,8 +6,8 @@ spec:
   selector:
     matchLabels:
       app: hello
-  replicas: 1 # tells deployment to run 1 pods matching the template
-  template: # create pods using pod definition in this template
+  replicas: 1
+  template:
     metadata:
       labels:
         app: hello
@@ -15,6 +15,7 @@ spec:
       containers:
       - name: helloworld
         image: l3rl4n/flask-app-simple:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 5100
 ---
