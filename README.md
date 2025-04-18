@@ -1,2 +1,2 @@
 # flask-app-simple
-Simple server for testing docker and K8s
+For throwing into a K8s cluster as a demo app
